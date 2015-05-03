@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href="https://widgets.freestockcharts.com/WidgetServer/WBITickerblue.css")
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+  body
+    #tickers
+    h1
+      #icon
+        img(src="/images/logo.png")
+      span AYLUS, LTD
+    block content
+    #footer
+      a(href='/') Home
+      a(href='/rates') Consulting Rates
+      a(href='/jobs') Jobs
+    script(src='/javascripts/footer.js')
+    script(src="/javascripts/ticker.js")
+    script.
+      var gainerTick = new WBIHorizontalTicker('gainers');
+      gainerTick.start();
+      var loserTick = new WBIHorizontalTicker('losers');
+      loserTick.start();

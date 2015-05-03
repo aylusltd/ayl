@@ -1,0 +1,79 @@
+body {
+  padding: 20px;
+  font: 12pt "Lucida Grande", Helvetica, Arial, sans-serif;
+  overflow:hidden;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#tickers > div.wbiscroller {
+  font-size:14pt;
+  height:16pt;
+}
+
+div#tickers{
+  width:100%;
+}
+
+div#icon{
+  overflow: hidden;
+  height: 80px;
+  width: 160px;
+  float:none;
+  display:inline-block;
+}
+
+div#icon img{
+  position: relative;
+  top:10px;
+}
+
+body{
+  background-color:#F0F7FF;
+}
+a{
+  color:#85BEFE;
+}
+h1,h2,h3,h4 {
+  color:#FFCB7B;
+}
+div#footer{
+  position: absolute;
+  width: 100%;
+  background-color: #FFF9EF;
+  left: 0;
+  bottom: 0;
+  height: 32pt;
+}
+div#footer a{
+  color: #FFCB7B;
+  padding-left: 20px;
+  padding-right: 10px;
+  height: 35pt;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 30pt;
+  font-size: 20pt;
+  border-radius: 100%;
+  position:relative;
+}
+a.selected{
+  background-color:white;
+}
+
+#wrapper ul li a{
+  font-weight:500;
+}
+
+/*a.selected::before{
+  content:" ";
+  width:20px;
+  background-color:#FFF9EF;
+  height: 35pt;
+  font-size: 20pt;
+  border-radius: 0% 100% 100% 0;
+  position:absolute;
+  left:0;
+}*/

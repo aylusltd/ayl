@@ -1,0 +1,60 @@
+extends layout
+
+block content
+  link(rel='stylesheet', href='/stylesheets/rates.css')
+  style.
+    div.panel{
+      min-width:200px;
+    }
+  h2 Consulting Rates
+  table
+    thead
+      tr
+        th Duration
+        th Rate
+        th Book
+      tr 
+        td Hourly (Remote)
+        td $150
+        td.book(data-duration="hourlyRemote") Reserve
+      tr
+        td Hourly (On Site NYC Metro Only)
+        td $250
+        td.book(data-duration="hourly") Reserve
+      tr
+        td Daily
+        td $1250 + 
+          span.travel Travel
+        td.book(data-duration="daily") Reserve
+      tr
+        td Weekly
+        td $5500 + 
+          span.travel Travel
+        td.book(data-duration="weekly") Reserve
+  #topicsContainer.panel
+    p We provide consulting in the following areas:
+    ul#topics
+      li Artificial Intelligence (Specifically Cognitive Computing via confidence bidding agents)
+      li Software Architecture
+      li Web Application Development
+      li Database Management
+      li Sarbanes-Oxley Compliance
+      li PCI Compliance
+      li Information Security
+      li Cyber Threat Mitigation (DDOS, CSRF, XSS, Malicious Code Injection and Execution Attacks)
+  #languagesContainer.panel
+    p We support development in the following languages:
+    ul#languages
+      li ECMAScript (ECMA6, ECMA7, JavaScript, Node/IO.JS)
+      li Clientside JS (ReactJS, Angular, d3)
+      li Python (with a focus on SciPy and similar)
+      li S/ML
+      li C/#/++
+      li RDBMS (SQL, PostGres, MySQL, Oracle)
+      li NoSQL (MongoDB, CouchDB, Cassandra)
+      li General Linux (Mainly Debian, though we support CentOS, Ubuntu, and others)
+      li Bash, Perl, Sed, Awk, & Grep
+      li Cloud Computing (AWS, Heroku, Google, DigitalOcean)
+      
+  
+   

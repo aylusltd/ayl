@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  if jobs && jobs.length
+    table
+      thead
+        tr
+          th Title
+          th Description
+          th Compensation
+          th Apply
+      tbody
+        each job in jobs
+          tr
+            td job.title
+            td job.description
+            td job.compensation
+            td 
+              button.apply(data-id = job.id)
+  else
+    p We have no open positions at the moment, but more are added everyday. Please check back soon.
+        
+    

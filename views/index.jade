@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  link(rel="stylesheet",href="/stylesheets/index.css")
+  #wrapper
+    p Welcome to #{title}, a full service digital, financial, and economic consultancy.
+    p We work on projects as diverse as:
+      ul
+        li 
+          img#NYSE(src="/images/NYSE.svg", height="30px")
+          span  The
+          a(href="http://www.nyse.com") New York Stock Exchange
+          span 's Issuer Life Cycle Management,
+        li 
+          img#BBG(src="/images/bloomberg.png", height="30px")
+          span  
+          a(href="http://www.bloomberg.com/rd/") Bloomberg
+          span 's Hedge Fund Compliance Platform, 
+        
+        li 
+          img#ATT(src="/images/att.png", height="30px")
+          span   
+          a(href="http://www.research.att.com/editions/201504_home.html?fbid=a6Dc28QUC4M") AT&T Labs
+          span  big data mining, data reporting, and CALEA
+         li
+          svg(version="1.1",xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink",x="0px",y="0px",viewBox="0 0 500 500",enable-background="new 0 0 500 500",xml:space="preserve",style="fill:#FFFFFF; height:30px")
+            g(xmlns="http://www.w3.org/2000/svg")
+              image(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="/images/PirateBayesian/skull.svg",height="350",width="400",x="50",y="50")
+              image(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="/images/PirateBayesian/pb.svg",height="100",width="100",x="150",y="350",transform="rotate(-30 200 400)")
+              image(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="/images/PirateBayesian/pb.svg",height="100",width="100",x="250",y="350",transform="rotate(50 300 400)")
+          span  
+            a(href='http://piratebayesian.com') the PirateBayesian
+            span ,
+    p and many more...
+  
+    #nb All logos are property of their owners and are not meant as an endorsement in either direction. Sometimes you take the work that pays.
+  
+    

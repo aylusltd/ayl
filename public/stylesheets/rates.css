@@ -1,0 +1,52 @@
+div{
+    width:50%;
+    float:left;
+}
+table { 
+    width:100%;
+    max-width:900px;
+    min-width:200px;
+}
+
+tr:nth-child(2n-1){
+    background-color:lighter;
+}
+
+tr:nth-child(2n){
+    
+}
+
+span.travel{
+    cursor: help;
+}
+
+span.travel::after{
+    content : "i";
+    color:blue;
+    background-color: white;
+    font-size:50%;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    border-radius:50%;
+}
+
+span.travel::after:hover{
+    background-color:light-blue;
+}
+
+.book{
+    width:100px;
+    height:50px;
+    color:white;
+    background-color:#85BEFE;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.book:hover{
+    background-color: #B4D8FF;
+    color: #F0F7FF;
+}
