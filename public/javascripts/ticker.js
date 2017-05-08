@@ -139,7 +139,7 @@ function WBIHorizontalTicker(a) {
     this.getSymbolDiv = function(b) {
         var e = b.n.replace(".", "_");
         e = e.replace("/", "_");
-        var d = '<span class="WLSymbolItem" id="' + e + '_display"><a class="sym" target="_parent" href="https://www.freestockcharts.com/?Symbol=' + b.n + '&source=TickerWidget">';
+        var d = '<span class="WLSymbolItem" id="' + e + '_display"><a class="sym" target="_parent" href="https://www.google.com/finance?q=' + b.n + '">';
         var c = "https://widgets.freestockcharts.com/WidgetServer/images/greenup.png";
         if (b.v1.substr(0, 1) == "-") {
             c = "https://widgets.freestockcharts.com/WidgetServer/images/reddown.png"
